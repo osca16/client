@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Simple HTTP Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="chat-app">
+    <header>
+      <h1>HTTP Chat</h1>
+      <div id="info">
+        <label>Username: <input id="username" placeholder="User1" /></label>
+        <label>Peer base URL: <input id="peerUrl" placeholder="http://<other-vm-ip>:5000" /></label>
+      </div>
+    </header>
+
+    <main>
+      <div id="messages"></div>
+    </main>
+
+    <footer>
+      <input id="messageInput" placeholder="Type a message..." />
+      <button id="sendBtn">Send</button>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
