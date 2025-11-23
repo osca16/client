@@ -1,4 +1,4 @@
-# HTTP Chat Application Between Two GCP Virtual Machines
+# HTTP Chat Application Between Two AWS EC2 Virtual Machines
 
 ### *Full Report / README Document*
 
@@ -6,15 +6,15 @@
 
 ## **1. Introduction**
 
-This report describes the design and deployment of a lightweight **HTTP-based chat application** running on **two Google Cloud Platform (GCP) Virtual Machines (VMs)**.
+This report describes the design and deployment of a lightweight **HTTP-based chat application** running on **two AWS Ubuntu EC2 Virtual Machines (VMs)**.
 
 The purpose of the project is to demonstrate:
 
 * Hosting applications on cloud environments
 * Communication between servers using HTTP
 * AJAX-based message exchange without page reload
-* Setting up firewall rules on GCP
-* Basic full-stack development using **Node.js (backend)** and **Next.js (frontend)**
+* Setting up firewall rules on AWS EC2
+* Basic full-stack development using **Node.js (backend)** and **React.js (frontend)**
 
 The solution meets all the required specifications from the assignment.
 
@@ -22,12 +22,15 @@ The solution meets all the required specifications from the assignment.
 
 ## **2. Objective**
 
-The main objective of this practical is to create two separate VMs on GCP and enable them to communicate by exchanging messages using HTTP.
+The main objective of this practical is to create two separate VMs on AWS and enable them to communicate by exchanging messages using HTTP.
 
 Each VM hosts:
 
-* A **Node.js/Express backend** (port 3001)
-* A **Next.js frontend** (port 3000)
+* A **Node.js/Express backend** (port 3000)
+* to install > Go to project Root directory and type npm install and after that type npm start and press enter
+*
+* A **React.js + TailwindCss frontend** (port 5173)
+ to install > Go to project Root directory and type npm install and after that type npm run dev or npm run dev -- --host 0.0.0.0  and press enter
 
 Users connected to each VM can send messages to the other VM in real-time using AJAX requests.
 
@@ -79,16 +82,16 @@ Users connected to each VM can send messages to the other VM in real-time using 
 
 ### **Frontend**
 
-* Next.js
+* React.js
 * React Hooks
 * Fetch API (AJAX requests)
 * Lightweight HTML/CSS
 
 ### **Cloud / Deployment**
 
-* Google Cloud Platform (GCP)
+* AWS Instances (EC2)
 * Compute Engine Virtual Machines (Ubuntu 22.04 LTS)
-* GCP Firewall Rules
+* EC2 Firewall Rules
 * SSH Terminal
 
 ---
