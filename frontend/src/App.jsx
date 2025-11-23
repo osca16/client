@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { Send, User, MessageCircle } from "lucide-react";
 
-const SERVER_URL = "http://localhost:3000"; // replace with other VM IP
+const SERVER_URL = "http://18.231.246.119:3000"; // replace with other VM IP
 
 export default function App() {
   const [messages, setMessages] = useState([]);
